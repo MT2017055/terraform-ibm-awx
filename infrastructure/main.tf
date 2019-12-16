@@ -31,6 +31,10 @@ resource "ibm_is_ssh_key" "sshkey" {
     public_key = "${var.ssh_public_key}"
 }
 
+provider "ibm" {
+  generation       = 1
+  region = "${var.region}"
+}
 
 resource ibm_is_security_group "awxsg" {
   name = "${var.basename}-awxsg"
