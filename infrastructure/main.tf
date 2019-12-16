@@ -40,7 +40,7 @@ resource ibm_is_security_group "awxsg" {
 
 data ibm_is_image "image1" {
   #name = "ubuntu-18.04-amd64"
-  name = "centos-7.x-amd64"
+  name = "ibm-centos-7-6-minimal-amd64-1"
 }
 
 resource ibm_is_instance "awxvsi" {
